@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <h1>Hotel Management</h1>
+      <h3>by Digiidunia</h3>
     </>
   );
 }
