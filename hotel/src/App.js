@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <h1>Hotel Management</h1>
-      <h3>by Digiidunia</h3>
+      <h3>by  Vishal  </h3>
+
+      <h4> New PR By Vishal </h4>
     </>
   );
 }
