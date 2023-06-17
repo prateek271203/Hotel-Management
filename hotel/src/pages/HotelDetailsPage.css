@@ -1,0 +1,188 @@
+.hotel-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  
+  .hotel-image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .hotel-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .hotel-info {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .hotel-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-location {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-rating {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    color: crimson;
+    font-weight: bold;
+  }
+  
+  .out-of {
+    color: #777;
+    font-weight: normal;
+  }
+  
+  .hotel-description {
+    margin-bottom: 20px;
+  }
+  
+  .amenities {
+    margin-bottom: 20px;
+  }
+  
+  .amenities h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .amenities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .amenities li {
+    margin-bottom: 5px;
+  }
+  
+  .booking-details {
+    margin-bottom: 20px;
+  }
+  
+  .booking-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .booking-details p {
+    margin-bottom: 10px;
+  }
+  
+  .book-now-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .hotel-details {
+      flex-direction: column;
+    }
+  
+    .hotel-info,
+    .hotel-image {
+      max-width: 100%;
+      flex: unset;
+    }
+  
+    .hotel-info {
+      padding: 20px;
+    }
+  }
+  
+  /* Additional Styles for Responsiveness */
+  
+  @media (max-width: 480px) {
+    .hotel-description {
+      font-size: 14px;
+    }
+  
+    .amenities h3 {
+      font-size: 18px;
+    }
+  
+    .amenities li {
+      font-size: 14px;
+    }
+  
+    .booking-details h3 {
+      font-size: 18px;
+    }
+  
+    .booking-details p {
+      font-size: 14px;
+    }
+  
+    .book-now-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Additional Attractive Styles */
+  
+  .hotel-details {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hotel-name {
+    color: #333;
+  }
+  
+  .hotel-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .out-of {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .hotel-description {
+    color: #555;
+  }
+  
+  .amenities li {
+    color: #555;
+  }
+  
+  .ctn {
+    font-size: 1rem;
+  }
+  
+  
+  
