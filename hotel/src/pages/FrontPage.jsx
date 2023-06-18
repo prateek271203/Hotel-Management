@@ -6,8 +6,8 @@ import Featured from '../components/featured/Featured';
 import FeaturedProperties from '../components/featuredProperties/FeaturedProperties';
 import Blogs from '../components/blogs/Blogs';
 import Testimonial from '../components/testimonial/Testimonial';
-import ReferralPage from '../components/referralPage/ReferralPage';
-import ReviewPage from '../components/reviewPage/ReviewPage';
+// import ReferralPage from '../components/referralPage/ReferralPage';
+// import ReviewPage from '../components/reviewPage/ReviewPage';
 
 
 const FrontPage = () => {
@@ -51,8 +51,8 @@ const FrontPage = () => {
       <FeaturedProperties/>
       <Blogs/>
       <Testimonial/>
-      <ReviewPage/>
-      <ReferralPage/>
+      {/* <ReviewPage/>
+      <ReferralPage/> */}
     </>
   );
 };
