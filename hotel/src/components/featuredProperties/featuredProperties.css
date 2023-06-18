@@ -2,8 +2,10 @@
   display: flex;
   width: 100%;
   flex-direction: row-reverse;
-  max-width: 1024px;
-  justify-content: space-between;
+  max-width: 90%;
+  /* justify-content: space-between; */
+  justify-content: center;
+  padding: 30px;
   gap: 20px;
 }
 

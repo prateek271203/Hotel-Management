@@ -1,0 +1,27 @@
+.ctn {
+   display: inline-block;
+   padding: 6px 28px;
+   color: white;
+   background-color: crimson;
+   font-size: 1.5rem;
+   border: none;
+   text-transform: uppercase;
+   letter-spacing: .1rem;
+   transition: .3s ease;
+}
+
+.ctn:hover {
+   color: crimson;
+   background-color: transparent;
+   border: 2px solid crimson;
+}
+
+
+.ctn-discont {
+   font-size: 1rem;
+}
+
+
+
+
+/* Footer */

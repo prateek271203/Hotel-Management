@@ -4,10 +4,10 @@ import './frontpage.css';
 import SearchBar from '../components/searchbar/SearchBar'
 import Featured from '../components/featured/Featured';
 import FeaturedProperties from '../components/featuredProperties/FeaturedProperties';
-// import MailList from '../components/mailList/MailList'
 import Blogs from '../components/blogs/Blogs';
-// import Testimonials from '../components/testimonials/Testimonials';
 import Testimonial from '../components/testimonial/Testimonial';
+import ReferralPage from '../components/referralPage/ReferralPage';
+import ReviewPage from '../components/reviewPage/ReviewPage';
 
 
 const FrontPage = () => {
@@ -49,11 +49,10 @@ const FrontPage = () => {
       <Featured />
       <h2 className='quick-hotel-title'>Top Hotels</h2>
       <FeaturedProperties/>
-      {/* <MailList/> */}
       <Blogs/>
-      {/* <Testimonials/> */}
-      <h2 className='quick-hotel-title'>Reviews</h2>
       <Testimonial/>
+      <ReviewPage/>
+      <ReferralPage/>
     </>
   );
 };
