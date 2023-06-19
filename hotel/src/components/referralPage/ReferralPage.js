@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './ReferralPage.css';
 
 const ReferralPage = () => {
   const referralLink = 'https://yourwebsite.com/referral?ref=your_unique_referral_code';
+
+  const handleCopyReferralLink = () => {
+    const referralLinkInput = referralLinkRef.current;
+
+    if (referralLinkInput) {
+      referralLinkInput.select();
+      document.execCommand('copy');
+      alert('Referral link copied to clipboard!');
+    }
+  };
 
   const handleShareWhatsApp = () => {
     const message = encodeURIComponent(`Check out this referral link: ${referralLink}`);
@@ -19,6 +29,8 @@ const ReferralPage = () => {
     window.open(`https://www.instagram.com/direct/new/?message=${message}`);
   };
 
+  const referralLinkRef = useRef(null);
+
   return (
     <div className="container mt-5">
       <h1 className="text-center">Refer and Earn</h1>
@@ -33,22 +45,28 @@ const ReferralPage = () => {
               className="form-control"
               value={referralLink}
               readOnly
+              ref={referralLinkRef}
             />
+            <div className="input-group-append">
+              <button className="ctn ctn-sm" type="button" onClick={handleCopyReferralLink}>
+                Copy Referral Link
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="text-center">
         <h2>Share Your Referral Link</h2>
-        <div className="share-buttons">
-          <button className="ntn" type="button" onClick={handleShareWhatsApp}>
-            Share on WhatsApp
+        <div className="d-flex justify-content-center">
+          <button className="ctn ctn-sm mx-2" type="button" onClick={handleShareWhatsApp}>
+            <i className="fab fa-whatsapp"></i>
           </button>
-          <button className="ntn" type="button" onClick={handleShareTextMessage}>
-            Share via Text Message
+          <button className="ctn ctn-sm mx-2" type="button" onClick={handleShareTextMessage}>
+            <i className="fas fa-sms"></i>
           </button>
-          <button className="ntn" type="button" onClick={handleShareInstagram}>
-            Share on Instagram
+          <button className="ctn ctn-sm mx-2" type="button" onClick={handleShareInstagram}>
+            <i className="fab fa-instagram"></i>
           </button>
         </div>
       </div>
@@ -63,5 +81,3 @@ const ReferralPage = () => {
 };
 
 export default ReferralPage;
-
-

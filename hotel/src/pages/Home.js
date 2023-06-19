@@ -5,10 +5,8 @@ import FrontPage from './FrontPage';
 const Home = () => {
   return (
     <div>
-      {/* <div className="hero-container"> */}
-        <FrontPage/>
-      {/* </div> */}
-      <HotelDetailsPage /> 
+      <FrontPage />
+      <HotelDetailsPage />
     </div>
 
   );

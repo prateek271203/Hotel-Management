@@ -1,5 +1,6 @@
 import React from 'react';
 import './SpecialOffers.css';
+import ReferralPage from '../components/referralPage/ReferralPage';
 
 const SpecialOffers = () => {
   const discounts = [
@@ -31,6 +32,7 @@ const SpecialOffers = () => {
 
   return (
     <div>
+      <div>
       <div className="container py-5">
         <h2 className="mb-4 py-5 text-center">Discount Section</h2>
         <div className="row">
@@ -40,13 +42,15 @@ const SpecialOffers = () => {
                 <div className="card-body">
                   <h5 className="card-title">{discount.title}</h5>
                   <p className="card-text">{discount.description}</p>
-                  <button className="ctn ctn-discont">Book Now</button>
+                  <button className="ctn ctn-sm">Book Now</button>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+    </div>
+    <ReferralPage/>
     </div>
   );
 };
