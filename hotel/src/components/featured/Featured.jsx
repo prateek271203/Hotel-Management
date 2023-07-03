@@ -53,7 +53,7 @@ const Featured = () => {
                onClick={handleclick2}
             />
             <div className="featureTitles">
-               <h1>Banglore</h1>
+               <h1>Bangalore</h1>
                <h2>{data[2]} Properties</h2>
             </div>
          </div>
