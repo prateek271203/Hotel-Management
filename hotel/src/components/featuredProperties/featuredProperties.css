@@ -16,6 +16,8 @@
   flex-direction: column;
   box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
   transition: 0.5s;
+  text-decoration: none;
+  color: black;
 }
 
 

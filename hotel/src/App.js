@@ -9,6 +9,9 @@ import ContactUs from './pages/ContactUs';
 import SearchHotels from './pages/SearchHotels';
 import SpecialOffers from './pages/SpecialOffers';
 import Footer from './components/footer/Footer';
+import MumbaiBlog from './components/blogs/MumbaiBlog';
+import PuneTravelBlog from './components/blogs/PuneTravelBlog';
+import HotelDetailsPage from './pages/HotelDetailsPage';
 import List from './pages/list/List';
 
 function App() {
@@ -25,7 +28,9 @@ function App() {
           <Route path="/SearchHotels" element={<SearchHotels />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/SpecialOffers" element={<SpecialOffers />} />
-
+          <Route exact path="/MumbaiBlog" element={<MumbaiBlog />} />
+          <Route exact path="/PuneTravelBlog" element={<PuneTravelBlog />} />
+          <Route exact path="/HotelDetailsPage" element={<HotelDetailsPage />} />
         </Routes>
         <Footer/>
       </BrowserRouter>

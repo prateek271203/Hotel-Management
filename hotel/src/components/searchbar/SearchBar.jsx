@@ -149,7 +149,7 @@ const Header = () => {
             </div>
           )}
         </div>
-        <div className="headerSearchItem">
+        <div className="">
           <button className="headerBtn" onClick={handleInput}>
             Search
           </button>

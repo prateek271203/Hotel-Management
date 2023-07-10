@@ -1,12 +1,13 @@
 import React from 'react';
-import HotelDetailsPage from './HotelDetailsPage';
 import FrontPage from './FrontPage';
+import PuneTravelBlog from '../components/blogs/PuneTravelBlog';
 
 const Home = () => {
   return (
     <div>
-      <FrontPage />
-      <HotelDetailsPage />
+      {/* <FrontPage /> */}
+      <PuneTravelBlog />
+
     </div>
 
   );

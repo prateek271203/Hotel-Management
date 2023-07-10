@@ -1,29 +1,54 @@
-.ctn {
+*,body{
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .ctn {
    display: inline-block;
    padding: 6px 28px;
    color: white;
    background-color: crimson;
-   font-size: 1.5rem;
+   font-size: 1rem;
    border: none;
    text-transform: uppercase;
    letter-spacing: .1rem;
    transition: .3s ease;
-}
-
-.ctn:hover {
+ }
+ 
+ .ctn:hover {
    color: crimson;
    background-color: transparent;
    border: 2px solid crimson;
-}
-
-
-.ctn-discont {
-   font-size: 1rem;
-}
-
-.ctn-sm{
+ }
+ 
+ .ctn-lg{
+   font-size: 1.7rem;
+ }
+ 
+ .ctn-md {
+   font-size: 1.5rem;
+ }
+ 
+ .ctn-sm {
    font-size: 1rem;
  }
-
-
-/* Footer */
+ 
+ .ctn-esm {
+   font-size: 0.8rem;
+   padding: 4px 12px;
+ }
+ 
+ .o{
+   color: crimson;
+   background-color: transparent;
+   border: 2px solid crimson;
+ }
+ 
+ .o:hover{
+   color: white;
+   background-color: crimson;
+   border: none;
+ }
+ 
+ 
+ /* Footer */

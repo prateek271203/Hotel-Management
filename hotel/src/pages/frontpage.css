@@ -1,75 +1,64 @@
-.front-page-container {
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./hotel.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* background-image: url('./hotel.jpg'); */
-  background-image: url('https://imagery.hoteltonight.com/mobile_web/featured/santa-monica-proper-hotel-bed.jpg?fp-x=0.5&fp-y=0.55&fit=crop&dpr=1&fm=pjpg&q=25&w=1200&h=500&auto=compress');
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  color: white;
-  height: 70vh;
+  justify-content: center;
+  text-align: center;
   padding-top: 100px;
 }
 
-.content-container {
+.hero-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .7;
+  z-index: -1;
+}
+
+.hero-container h1 {
+  width: 100%;
+  display: block;
+  font-size: 4rem;
+  position: relative;
+  color: white;
   text-align: center;
-  background-color: transparent;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-
-.front-page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.title {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px;
 }
 
 .description {
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-
-.info-link {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.info-link a {
-  color: #007bff;
-}
-
-.arrow-icon {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-left: 5px;
-  vertical-align: middle;
-}
-
-.arrow-icon svg {
-  stroke: currentColor;
-  stroke-width: 3;
-}
-
-.hotel-link a {
-  font-size: 16px;
   color: white;
-  text-decoration: none;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  padding: 0 25%;
+  text-align: center;
 }
 
-.hotel-link a:hover {
-  text-decoration: underline;
-}
 
+@media (max-width:768px) {
+  .hero-container {
+    height: 100vh;
+  }
+
+  .ctn {
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
+    padding: 0;
+  }
+}
 /* quick hotel */
 
 .quick-hotel-title {

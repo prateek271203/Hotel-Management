@@ -1,5 +1,6 @@
 // import { CircularProgress } from "@material-ui/core"
 // import useFetch from "../../hooks/useFetch"
+import { Link } from 'react-router-dom';
 import "./featuredProperties.css"
 import I1 from './images/i1.jpeg'
 import I2 from './images/i2.jpeg'
@@ -55,8 +56,7 @@ const FeaturedProperties = () => {
     <div className="fp">
 
       {data.map(item => (
-
-        <div className="fpItem" key={item.id}>
+        <Link to="/HotelDetailsPage" className="fpItem" key={item.id}>
           <img src={item.photos} alt="photos" className="fpImg" />
           <span className="fpName">{item.name}</span>
           <span className="fpCity">{item.city}</span>
@@ -68,7 +68,8 @@ const FeaturedProperties = () => {
 
           </div>}
 
-        </div>))}
+        </Link>
+      ))}
 
     </div>
 
